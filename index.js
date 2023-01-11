@@ -6,6 +6,7 @@ window.onload = function() {
 const firebaseConfig = {
   apiKey: "AIzaSyChLMLLwP82E9W_G-tNRbtibQ9mPITXU0o",
   authDomain: "wequest-mobile.firebaseapp.com",
+  databaseURL: "https://wequest-mobile-default-rtdb.firebaseio.com",
   projectId: "wequest-mobile",
   storageBucket: "wequest-mobile.appspot.com",
   messagingSenderId: "40354597009",
@@ -15,7 +16,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
   // This is very IMPORTANT!! We're going to use "db" a lot.
   var db = firebase.database()
   // We're going to use oBjEcT OrIeNtEd PrOgRaMmInG. Lol
@@ -43,7 +43,7 @@ const analytics = getAnalytics(app);
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title.textContent = 'Clique'
+      title.textContent = 'MemeChat 2.0'
 
       title_inner_container.append(title)
       title_container.append(title_inner_container)
